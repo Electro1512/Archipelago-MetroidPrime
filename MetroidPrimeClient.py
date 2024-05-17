@@ -138,7 +138,7 @@ async def handle_receive_items(ctx: MetroidPrimeContext, current_items: dict[str
         power_bomb_item.code, ctx.items_received)
     diff = num_power_bombs_received - power_bomb_item.current_capacity
     if diff > 0 and power_bomb_item.current_capacity < power_bomb_item.max_capacity:
-        new_capacity = min(num_power_bombs_received,
+        new_capacity = min((3 + num_power_bombs_received),
                            power_bomb_item.max_capacity)
         new_amount = min(power_bomb_item.current_amount + diff, new_capacity)
         logger.debug(
