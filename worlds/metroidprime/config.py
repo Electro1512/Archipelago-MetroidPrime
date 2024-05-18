@@ -213,7 +213,7 @@ def make_config(world):
                 "Artifact of Spirit": starting_inventory(world, "Artifact of Spirit"),
                 "Artifact of Newborn": starting_inventory(world, "Artifact of Newborn")
             },
-            "requiredArtifactCount": options.required_artifacts.value
+            "requiredArtifactCount": 12
         },
         "levelData": {
             "Frigate Orpheon": {
