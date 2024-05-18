@@ -114,7 +114,7 @@ class MetroidPrimeWorld(World):
                 for j in range(0, 4):
                     self.multiworld.itempool += [
                         self.create_item("Power Bomb Expansion")]
-                items_added += 4
+                items_added += 5
             else:
                 self.multiworld.itempool += [self.create_item(i)]
                 items_added += 1
